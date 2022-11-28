@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="Worc-símbolo-oficial.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Agendar uma Conversa</title>
+
+
+
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+        <div class="col-md-9">
+          <div class="form h-100 contact-wrap p-5">
+            <div class="text-center">
+              <img src="Worc-logotipo-oficial-vertical.png" style="width: 25%; margin-bottom: 30px; margin-top: -10px;">
+              <h3>Quer contratar sua equipe com a Worc?</h3>
+            <p style="margin-bottom: 50px;">Insira seus dados abaixo que nossa equipe comercial entrará em contato com o seu estabelecimento em até 24h! 😁</p>
+            </div>
+            
+            <form class="mb-5 box" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+
+                <input id="date" name="prop_date" style="display:none">
+
+
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Nome do seu Estabelecimento*</label>
+                  <input type="text" class="form-control" onkeyup="success()" name="nome_estabelecimento" id="nome_estabelecimento">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Nome Responsável*</label>
+                  <input type="text" class="form-control" onkeyup="success()" name="nome_responsavel" id="nome_responsavel">
+                </div>
+
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">Tipo de Estabelecimento*</label>
+                  <select name="tipo_de_estabelecimento" class="form-control" id="cars">
+                      <option value=""></option>
+                      <option value="Açougue">Açougue</option>
+                      <option value="Agência de R&S">Agência de R&S</option>
+                      <option value="Bar">Bar</option>
+                      <option value="Cafeteria/ Brunch">Cafeteria/ Brunch</option>
+                      <option value="Churrascaria">Churrascaria</option>
+                      <option value="Culinária Alemã">Culinária Alemã</option>
+                      <option value="Culinária Árabe">Culinária Árabe</option>
+                      <option value="Culinária Brasileira">Culinária Brasileira</option>
+                      <option value="Culinária Italiana">Culinária Italiana</option>
+                      <option value="Culinária Mexicana">Culinária Mexicana</option>
+                      <option value="Culinária Peruana">Culinária Peruana</option>
+                      <option value="Culinária Francesa">Culinária Francesa</option>
+                      <option value="Culinária Japonesa">Culinária Japonesa</option>
+                      <option value="Culinária Asíatica">Culinária Asíatica</option>
+                      <option value="Culinária Mediterrânea">Culinária Mediterrânea</option>
+                      <option value="Fast food (Hotdog, pastelaria...)">Fast food (Hotdog, pastelaria...)</option>
+                      <option value="Padaria">Padaria</option>
+                      <option value="Balada">Balada</option>
+                      <option value="Evento">Evento</option>
+                      <option value="Hotelaria">Hotelaria</option>
+                      <option value="Hamburgueria">Hamburgueria</option>
+                      <option value="Pizzaria">Pizzaria</option>
+                      <option value="Marmita">Marmita</option>
+                      <option value="Mercado">Mercado</option>
+                      <option value="Saudável">Saudável</option>
+                      <option value="Veggie">Veggie</option>
+                      <option value="Doces">Doces</option>
+                  </select>                
+                </div>
+
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Email*</label>
+                  <input type="email" class="form-control" onkeyup="success()" name="email" id="email">
+                </div>
+
+
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Whatsapp / Telefone*</label>
+                  <input type="text" class="form-control" onkeyup="success()" name="telefone" id="telefone">
+                </div>
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">Cidade*</label>
+                  <input type="text" class="form-control" onkeyup="success()" name="cidade" id="cidade">
+                </div>
+
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">Como conheceu a gente?*</label>
+                  <select name="como_conheceu_a_gente" class="form-control" id="cars">
+                      <option value=""></option>
+                      <option value="Indicação">Indicação</option>
+                      <option value="LinkedIn">LinkedIn</option>
+                      <option value="Pesquisa Google">Pesquisa Google</option>
+                      <option value="Mídias Sociais">Mídias Sociais</option>
+                      <option value="Veículos de Notícias">Veículos de Notícias</option>
+                  </select>                
+                </div>
+              </div>
+
+              
+              <div class="row justify-content-center" style="margin-top: 40px">
+                <div class="col-md-5 form-group text-center">
+                  <button id="button" type="submit" class="btn btn-block btn-primary rounded-0 py-2 px-4" disabled onclick="showHtmlDiv();">Enviar</button>
+                  
+                </div>
+              </div>
+            </form>
+
+            <div class="text-center" id="output" style="display: none">
+              <img id="img1" src="check-circle.gif" style="margin-bottom: 20px">
+              <p>Sua mensagem foi enviado com sucesso e em breve nossa equipe comercial irá entrar em contato para agendar um bate papo!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+  <script type="text/javascript">
+    $("#contactForm").submit(function(e) {
+    e.preventDefault();
+});
+  </script>
+
+  <script type="text/javascript">
+    function showHtmlDiv() {
+  var htmlShow = document.getElementById("output");
+  var dope = document.getElementById("contactForm");
+  if (htmlShow.style.display === "none") {
+    htmlShow.style.display = "block";
+    dope.style.display = "none";
+  } else {
+    htmlShow.style.display = "none";
+  }
+}
+  </script>
+
+  
+
+
+   <script type="text/javascript">
+      setTimeout(function() {
+    setInterval(function() {
+        $('#img1').attr('src',$('#img1').attr('src'))
+    },1)
+}, 1000)
+    </script>
+    
+
+    <script type="text/javascript">
+      function success() {
+   if(document.getElementById("nome_estabelecimento").value==="" || document.getElementById("nome_responsavel").value==="" || document.getElementById("email").value==="" || document.getElementById("telefone").value==="" || document.getElementById("cidade").value==="") { 
+            document.getElementById('button').disabled = true; 
+        } else { 
+            document.getElementById('button').disabled = false;
+        }
+    }
+    </script>
+
+    <script type="text/javascript">
+      
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCB3s31C6jfDQkPDutxBEWA9_2CMS5iTYArLyYHgaxoCqhJwgiEzu2e0mfQlqsJ2weig/exec'
+  const form = document.forms['contactForm']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script type="text/javascript">
+  document.getElementById('date').value = Date();
+</script>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
